@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Data (зберігаємо структуру, але не самі файли, якщо вони великі)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# MLflow
+mlruns/
+.trash/
+
+# Models
+models/*
+!models/.gitkeep
+
+# IDE
+.idea/
+.vscode/

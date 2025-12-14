@@ -1,0 +1,17 @@
+project:
+  name: "breast_cancer_automl"
+
+data:
+  train_path: "data/processed/train.csv"
+  test_path: "data/processed/test.csv"
+  target_col: "target"
+
+automl:
+  max_models: 10          # Максимум 10 моделей
+  max_runtime_secs: 300   # Або максимум 5 хвилин (300 сек)
+  seed: 42
+  sort_metric: "AUCPR"    # Метрика для ранжування лідерборду (Area Under Precision-Recall Curve)
+
+mlflow:
+  experiment_name: "Breast_Cancer_Experiments"
+  tracking_uri: "mlruns"
